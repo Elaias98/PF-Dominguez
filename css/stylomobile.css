@@ -1,0 +1,667 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.grilla{
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-template-areas: 
+    "navegar encabezado encabezado"
+    "navegar relleno relleno"
+    "navegar pie pie";
+
+    grid-template-columns: 80px 1fr 1fr;
+    grid-template-rows: 130px 3000px 110px;
+    column-gap: 23px;
+ /* HAY ALGUNA FORMA DE QUE EL CONTENIDO QUE AGREGUE
+    INDEPENDIENTEMENTE DEL TAMAÑO QUE SEA ABARQUE EL MAIN?
+    
+    PORQUE CONFIGURE PARA QUE ENTRE UN CONTENIDO ESPECIFICO
+    PERO AL AGREGARLE 2 LINEA MAS ERA COMO QUE EL FOOTER SE ME DESCONFIGURABA Y ATRAVEZABA TODO
+    ES ALGO QUE TENGO DESDE LA PRIMERA ENTREGAGIT*/
+
+   
+}
+
+
+#encabezado{
+    grid-area: encabezado;
+    background-image: url(../img/metal-slipknot-nu-metal-wallpaper-preview.jpg);
+    background-size: cover;
+}
+
+#navegar{
+    grid-area: navegar;
+}
+
+#relleno{
+    grid-area: relleno;
+}
+
+#pie{
+    grid-area: pie;
+    background-color: black;
+}
+
+
+.texto-imagen{
+    font-family: 'El Messiri', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    
+    color: red;
+    position: relative;
+    }
+
+
+
+.display-none-escritorio
+{
+    display:none
+}
+
+.color
+{
+    background-color: black;
+}
+
+
+
+/* NAV */
+
+.display-none-escritorio{
+    display: none;
+}
+
+.posicion-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    justify-content: start;
+}
+
+.extender{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.colornav{
+    background-color: rgb(45, 47, 51);
+}
+
+#colorli{
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    margin-bottom: 74px;
+    font-size: 20px;
+
+}
+
+#boton-nav-bar{
+    background-color: white;
+    margin-top: -100px;
+    
+}
+
+/* SECCION MAIN */
+.novedades{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding:6px;
+    border-radius: 5px;
+}
+
+
+.main-centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main-centrar h2{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+
+
+.novedades h3{
+    background-color: red;
+    color: white;
+    font-family: fantasy;
+    font-size: 20px;
+    width: 108px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
+.novedades h4{
+    font-size: 15px;
+
+}
+.fondo-body{
+    background-image: url(../img/wallpaper-skull.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* PAGINA 1 - NOTICIAS */
+
+/* .noticia1{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    EN TEORIA SI AGREGABA ESTO TENIA QUE PONERSE EN COLUMNA EL CELULAR. PERO SE ME DESCONFIGURABA
+    TodQ asi que lo deje como comentario. Recien agregue un display-none al html y me lo toma como columna sin asignarle
+    RARO
+
+    Pero bueno, le dejo el comentario por si le sirve
+    
+} */
+
+.tamanio-carrusel{
+    
+    height: 180px;
+    width: 210px;
+    margin: auto;
+}
+.tamanio-imagen-noticias{
+    height:300px ;
+    width: 250px;
+}
+
+
+.texto-noticias{
+    background-color: blanchedalmond;
+}
+
+
+.caja-scroll{
+    width: 230px;
+    height: 550px;
+    border-radius: 5px;
+    overflow: scroll;
+}
+
+.titulo-art{
+    color: white;
+    
+}
+.subtitulo-art{
+    font-family: 'Shadows Into Light', cursive;
+    color: red;
+}
+
+.pagina-navegacion2{
+display: flex;
+justify-content: center;
+}
+
+
+
+/* SECCION FOOTER */
+.footer-font{
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    margin-bottom: 0;
+    margin-right: 17px;
+    margin-top: 20px;
+    text-align: center;
+}
+.estilo-footer{
+    display: flex;
+
+}
+
+.union-footer{
+    display: flex;
+   
+    flex-direction: column;
+    align-items: end;
+
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* SECCION TABLET */
+
+@media (min-width:576px) and (max-width:1020px){
+    
+    .grilla{
+        width: 100%;
+        height: 250px;
+        display: grid;
+        grid-template-areas:
+        "encabezado encabezado encabezado"
+        "navegar navegar navegar"
+        "relleno relleno relleno"
+        "pie pie pie";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 260px 58px 2370px;
+    }
+
+/* NAV */
+
+.posicion-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    justify-content: start;
+}
+
+
+
+
+.colornav{
+    background-color: rgb(45, 47, 51);
+}
+
+#colorli{
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    margin: 0;
+
+}
+
+#boton-nav-bar{
+    background-color: white;
+    margin-top: 1px;
+    
+}
+
+.fondoli{
+    background-color: gray;
+    width: 90px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#tablet-margin{
+    display: flex;
+
+}
+
+
+/* SECCION MAIN */
+.novedades{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+    
+
+.main-centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video{
+    width: 490px;
+    height: 460px;
+}
+
+.fondo-body{
+    background-image: url(../img/wallpaper-skull.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* PAGINA 1 - NOTICIAS */
+
+.noticia1{
+    
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px ;
+    
+}
+
+.tamanio-carrusel{
+    
+    height: 180px;
+    width: 600px;
+    margin: auto;
+}
+
+.tamanio{}
+
+.texto-noticias{
+    background-color: blanchedalmond;
+}
+
+
+.caja-scroll{
+    width: 760px;
+    height: 650px;
+    border-radius: 5px;
+    overflow: scroll;    
+}
+
+.titulo-art{
+    color: white;
+    
+}
+.subtitulo-art{
+    font-family: 'Shadows Into Light', cursive;
+    color: red;
+}
+
+.pagina-navegacion2{
+display: flex;
+justify-content: center;
+}
+
+/* SECCION FOOTER */
+.footer-font{
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 28px;
+    margin-right: 48px;
+    margin-top: 30px;
+}
+.estilo-footer{
+    display: flex;
+
+}
+
+.union-footer{
+    display: flex;
+   
+    flex-direction: column;
+    align-items: end;
+
+    width: 100%;
+}
+
+.estilo-footer img{
+    height: 80px;
+    width: 80px;
+}
+
+
+
+}
+
+
+
+
+
+
+@media (min-width:1021px){
+    .grilla{
+        width: 100%;
+        height: 250px;
+        display: grid;
+        grid-template-areas:
+            "encabezado encabezado encabezado"
+            "relleno relleno relleno"
+            "pie pie pie";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 287px 2460px 270px;
+    }
+
+/* HEADER */
+#encabezado:not(row)
+{
+    background-image: none;
+}
+.header-pag{
+height: 100%;
+width: 2000px;
+}
+
+.imagen{
+
+height: 100%;
+width: 310px;
+}
+.texto-imagen{
+    
+    font-family: 'Rubik Wet Paint', cursive;
+    
+    color: red;
+    position: relative;
+    margin-top: -80px;
+    margin-left: 7px;
+    }
+
+.direccion{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* NAV */
+
+.display-none{
+    display: none;
+}
+.display-none-escritorio{
+    display: block;
+    
+}
+.nav-widh-escritorio{
+width: 100%;
+position: relative;
+margin-top: -64px
+}
+
+
+.nav-escritorio
+{
+    display: flex;
+    list-style: none;
+    justify-content:space-around;
+}
+
+.nav-escritorio li{
+    border: 10px double white;
+    padding: 10px;
+    background-color: gray;
+    font-size: 20px;
+    
+    
+}
+.nav-escritorio li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* SECCION MAIN */
+.novedades{
+    width: 50%;
+}
+
+.novedades1{
+    width: 100%;
+    display:flex ;
+    justify-content: center;
+    margin-left: -105px;
+}
+    
+
+.main-centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -210px;
+}
+.main-centrar h2{
+    margin-top: 20px;
+    color: white;
+    font-size: 40px;
+
+
+}
+
+.pagina-navegacion{
+    margin-left: 490px;
+    margin-top: 135px;
+}
+
+
+
+.video{
+    width: 490px;
+    height: 460px;
+}
+
+.fondo-body{
+    background-image: url(../img/wallpaper-skull.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* PAGINA 1 - NOTICIAS */
+.noticia1{
+
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.tamanio-carrusel{
+    
+    height: 350px;
+    width: 600px;
+    margin: auto;
+}
+
+
+
+.texto-noticias{
+    background-color: blanchedalmond;
+}
+
+
+.caja-scroll{
+    width: 760px;
+    height: 650px;
+    border-radius: 5px;
+    overflow: scroll;    
+}
+
+.titulo-art{
+    color: white;
+    
+}
+.subtitulo-art{
+    font-family: 'Shadows Into Light', cursive;
+    color: red;
+}
+
+.pagina-navegacion2{
+display: flex;
+justify-content: center;
+}
+
+
+/* SECCION FOOTER */
+.footer-font{
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    margin-right: 78px;
+    margin-top: 70px;
+}
+.estilo-footer{
+    display: flex;
+
+}
+
+.union-footer{
+    display: flex;
+   
+    flex-direction: column;
+    align-items: end;
+
+    width: 100%;
+}
+
+.estilo-footer img{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+}
+
+
+/* PAGINA 3 BANDAS */
+.celdas-art{
+    display: flex;
+    flex-direction: column;
+    margin: 46px 330px 55px 30px;
+}
+
+.columnas-celdas-art{
+    display: flex;
+    margin-left: 20px;
+}
+
+.celdas-art h3{
+    color: white;
+}
+
+
+
+
+
+/*PAGINA 4 FORO*/
+.imagen-humor{
+    height: 300px;
+    width: 450px;
+}
+
+.caja-comentarios{
+    margin-top: 20px;
+display: flex;
+flex-direction: column;
+}
+
+.separacion{
+    margin-left: 20px;
+}
+
+
+/* PAGINA 5 CONTACTO */
+fieldset{
+    border: 2px solid white;
+    width: 60%;
+
+}
+form{
+    margin: 20px;
+}
