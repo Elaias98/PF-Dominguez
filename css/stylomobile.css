@@ -212,7 +212,16 @@
 } */
 
 
-/* PAGINA 1 - NOTICIAS - CELULAR */
+/* ----------------------PAGINA 1 - NOTICIAS - CELULAR---------------------- */
+
+
+
+
+
+
+
+
+
 
 /* .noticia1{
 
@@ -228,15 +237,7 @@
     Pero bueno, le dejo el comentario por si le sirve
     
 } */
-.noticia1{
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
-    
-}
+
 
 /* .tamanio-carrusel{
     
@@ -244,6 +245,32 @@
     width: 630px;
     /* margin: auto; }*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* QUITAMOS NOTICIA1 PORQUE CAUSABA ERRORES EN MOBILE */
+.noticia1{
+
+    margin-left: 10px;
+    /* height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px; */
+    
+}
 
 
 .caja-noticias{
@@ -795,7 +822,7 @@ width: auto;
 
 
 /* PAGINA 1 - NOTICIAS - PC ESCRITORIO */
-#noticias1pc{
+.noticia1{
     display: flex ;
     justify-content: space-between;
     width: 100%;
