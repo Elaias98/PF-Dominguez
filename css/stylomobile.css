@@ -1,20 +1,22 @@
-body{
+*{
     padding: 0;
     margin: 0;
 }
 
-/* .grilla{
+
+/* ----------------------CELULAR---------------------------------- */
+.grilla{
     width: 100%;
     height: 250px;
     display: grid;
-    grid-template-areas: 
-    "navegar encabezado encabezado"
-    "navegar relleno relleno"
-    "navegar pie pie";
-
-    grid-template-columns: 80px 1fr 1fr;
-    grid-template-rows: 130px 3000px 110px;
-    column-gap: 23px; */
+    grid-template-areas:
+        "navegar encabezado encabezado"
+        "navegar relleno relleno"
+        "navegar pie pie";
+        grid-template-columns: 80px repeat(2,1fr);
+        grid-template-rows: 200px auto 100px;
+        column-gap: 20px;
+}
  /* HAY ALGUNA FORMA DE QUE EL CONTENIDO QUE AGREGUE
     INDEPENDIENTEMENTE DEL TAMAÑO QUE SEA ABARQUE EL MAIN?
     
@@ -26,14 +28,14 @@ body{
 
 
 
-/* #encabezado{
+#encabezado{
 
     grid-area: encabezado;
 
     
     background-image: url(../img/metal-slipknot-nu-metal-wallpaper-preview.jpg);
     background-size: cover;
-} */
+}
 
 .encabezado{
 
@@ -76,6 +78,7 @@ body{
     display:none
 }
 
+
 .color
 {
     background-color: black;
@@ -83,7 +86,7 @@ body{
 
 
 
-/* NAV */
+/* NAV - CELULAR*/
 
 .display-none-escritorio{
     display: none;
@@ -121,8 +124,48 @@ body{
     
 }
 
-/* SECCION MAIN */
-.novedades{
+
+
+
+/* SECCION MAIN - CELULAR*/
+.fondo-articulos{
+    margin-top: 20px;
+    background-color: bisque;
+    border-radius: 5px;
+    width: 85%;
+    
+}
+
+.titulo-articulo-tablet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.h2-iframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fondo-body{
+    background-image: url(../img/wallpaper-skull.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
+.paginas-nav{
+    margin-top: 40px;
+}
+
+
+
+
+/* .novedades{
     display: flex;
     flex-direction: column;
     background-color: antiquewhite;
@@ -166,10 +209,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 
 
-/* PAGINA 1 - NOTICIAS */
+/* PAGINA 1 - NOTICIAS - CELULAR */
 
 /* .noticia1{
 
@@ -185,14 +228,54 @@ body{
     Pero bueno, le dejo el comentario por si le sirve
     
 } */
+.noticia1{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    
+}
+
+/* .tamanio-carrusel{
+    
+    height: auto;
+    width: 630px;
+    /* margin: auto; }*/
+
+
+
+.caja-noticias{
+    width: 95%;
+    height: auto;
+    border-radius: 5px;  
+    background-color: blanchedalmond;
+    padding: 10px;}
+
+
+
+.titulo-art{
+    color: white;
+    
+}
+.subtitulo-art{
+    font-family: 'Shadows Into Light', cursive;
+    color: red;
+}
+
+.pagina-navegacion2{
+display: flex;
+justify-content: center;
+} 
 
 .tamanio-carrusel{
     
-    height: 180px;
-    width: 210px;
-    margin: auto;
+    height: auto;
+    width: auto;
 }
-.tamanio-imagen-noticias{
+
+/* .tamanio-imagen-noticias{
     height:300px ;
     width: 250px;
 }
@@ -222,11 +305,11 @@ body{
 .pagina-navegacion2{
 display: flex;
 justify-content: center;
-}
+} */
 
 
 
-/* SECCION FOOTER */
+/* SECCION FOOTER - CELULAR*/
 .footer-font{
     color: white;
     font-family: 'Shadows Into Light', cursive;
@@ -257,7 +340,7 @@ justify-content: center;
 
 
 
-/* SECCION TABLET */
+/* ------------------SECCION TABLET------------------------------ */
 
 @media (min-width:576px) and (max-width:1020px){
     
@@ -270,11 +353,14 @@ justify-content: center;
         "navegar navegar navegar"
         "relleno relleno relleno"
         "pie pie pie";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 260px 58px 2370px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 260px 60px auto 160px;
     }
+    
+    
+    
 
-/* NAV */
+/* NAV - TABLET*/
 
 .posicion-nav{
     display: flex;
@@ -318,8 +404,67 @@ justify-content: center;
 }
 
 
-/* SECCION MAIN */
-.novedades{
+/* SECCION MAIN - TABLET*/
+
+/* .derecha-izquierda{
+    display: flex;
+}
+
+.seccion-izquierda{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+.seccion-derecha{
+height: 95%;
+width: auto;
+} */
+
+.fondo-articulos{
+    margin-top: 20px;
+    background-color: bisque;
+    border-radius: 5px;
+    width: 85%;
+    
+}
+
+.titulo-articulo-tablet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.h2-iframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video{
+    width: 490px;
+    height: 460px;
+}
+
+.fondo-body{
+    background-image: url(../img/wallpaper-skull.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
+.paginas-nav{
+    margin-top: 40px;
+}
+
+
+
+/* .novedades{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -346,36 +491,34 @@ justify-content: center;
 }
 
 
-/* PAGINA 1 - NOTICIAS */
+/* PAGINA 1 - NOTICIAS - TABLET */
 
 .noticia1{
-    
+    height: auto;
     width: 100%;
     display: flex;
-    margin-bottom: 50px ;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
     
 }
 
 .tamanio-carrusel{
     
-    height: 180px;
-    width: 600px;
-    margin: auto;
+    height: auto;
+    width: 630px;
+    /* margin: auto; */
 }
 
-.tamanio{}
 
-.texto-noticias{
+.caja-noticias{
+    width: 90%;
+    height: auto;
+    border-radius: 5px;  
     background-color: blanchedalmond;
-}
+    padding: 10px;}
 
 
-.caja-scroll{
-    width: 760px;
-    height: 650px;
-    border-radius: 5px;
-    overflow: scroll;    
-}
 
 .titulo-art{
     color: white;
@@ -389,9 +532,11 @@ justify-content: center;
 .pagina-navegacion2{
 display: flex;
 justify-content: center;
-}
+} 
 
-/* SECCION FOOTER */
+
+
+/* SECCION FOOTER - TABLET */
 .footer-font{
     color: white;
     font-family: 'Shadows Into Light', cursive;
@@ -425,22 +570,24 @@ justify-content: center;
 
 
 
-
+/*------------------ SECCION PC DE ESCRITORIO ----------------------------*/
 
 @media (min-width:1021px){
+
+
     .grilla{
-        width: 100%;
-        height: 250px;
+        /* width: 100%;
+        height: 250px; */
         display: grid;
         grid-template-areas:
             "encabezado encabezado encabezado"
             "relleno relleno relleno"
             "pie pie pie";
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 287px 2460px 270px;
+            grid-template-rows: 287px auto 270px;
     }
 
-/* HEADER */
+/* HEADER - PC ESCRITORIO*/
 #encabezado:not(row)
 {
     background-image: none;
@@ -472,7 +619,7 @@ width: 310px;
 }
 
 
-/* NAV */
+/* NAV - PC DE ESCRITORIO */
 
 .display-none{
     display: none;
@@ -509,7 +656,112 @@ margin-top: -64px
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* SECCION MAIN */
+/* SECCION MAIN PC DE ESCRITORIO*/
+.derecha-izquierda{
+    display: flex;
+}
+
+.seccion-izquierda{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+.seccion-derecha{
+height: 93%;
+width: auto;
+}
+
+.fondo-articulos{
+    background-color: bisque;
+    border-radius: 5px;
+    width: 75%;
+    
+}
+
+.titulo-articulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2-iframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video{
+    width: 490px;
+    height: 460px;
+}
+
+.fondo-body{
+    background-image: url(../img/wallpaper-skull.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
+.paginas-nav{
+    margin-top: 40px;
+}
+/* #color-pagina{
+    background-color: orange;
+} */
+
+
+
+
+/* ME QUEDE EN FORMULARIOOO */
+#fuente-formulario{
+    color: white;
+}
+.fondo-formulario{
+    height: 600px;
+    width: auto;
+    background-color:#020122;
+    padding: 20px;
+    border:1px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.fondo-formulario h3{
+    text-align: center;
+}
+.sticky-formulario{
+    position: sticky;
+    top: 0;
+}
+
+
+
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.alinear-formulario{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+ .ingresar-datos{
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+ }
+
+/* PRIMERA VERSION DEL MAIN----------------------------------------------------------
+
 .novedades{
     width: 50%;
 }
@@ -539,51 +791,52 @@ margin-top: -64px
 .pagina-navegacion{
     margin-left: 490px;
     margin-top: 135px;
-}
+} */
 
 
-
-.video{
-    width: 490px;
-    height: 460px;
-}
-
-.fondo-body{
-    background-image: url(../img/wallpaper-skull.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-/* PAGINA 1 - NOTICIAS */
-.noticia1{
-
+/* PAGINA 1 - NOTICIAS - PC ESCRITORIO */
+#noticias1pc{
+    display: flex ;
+    justify-content: space-between;
     width: 100%;
-    display: flex;
     margin-bottom: 50px;
+    height: auto;
+    
+    
 }
+
+/* #noticias1pc:not(.noticia1){
+    width: 100%;
+    display: flex ;
+    margin-bottom: 50px;
+    height: auto;
+    justify-content: space-between;
+} */
+
 
 .tamanio-carrusel{
     
     height: 350px;
     width: 600px;
-    margin: auto;
+    position: sticky;
+    top: 0;
+    height: 95%;
 }
 
 
 
-.texto-noticias{
+/* .texto-noticias{
     background-color: blanchedalmond;
-}
+    width: 50%;
+} */
 
 
-.caja-scroll{
-    width: 760px;
-    height: 650px;
-    border-radius: 5px;
-    overflow: scroll;    
-}
+.caja-noticias{
+    width: 50%;
+    height: auto;
+    border-radius: 5px;  
+    background-color: blanchedalmond;
+    padding: 10px;}
 
 .titulo-art{
     color: white;
@@ -597,10 +850,11 @@ margin-top: -64px
 .pagina-navegacion2{
 display: flex;
 justify-content: center;
+margin-bottom: 30px;
 }
 
 
-/* SECCION FOOTER */
+/* SECCION FOOTER PC ESCRITORIO */
 .footer-font{
     color: white;
     font-family: 'Shadows Into Light', cursive;
