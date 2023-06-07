@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*--------------------------- SECCION CELULAR ------------------------------------ */
+.grilla {
+  display: grid;
+  grid-template-areas: "navegar encabezado encabezado" "navegar relleno relleno" "navegar pie pie";
+  grid-template-columns: 105px repeat(2, 1fr);
+  grid-template-rows: 200px auto 100px;
+}
+/* SECCION HEADER CELULAR */
+#encabezado {
+  grid-area: encabezado;
+  background-image: url(../img/metal-slipknot-nu-metal-wallpaper-preview.jpg);
+  background-size: cover;
+}
+#encabezado .texto-imagen {
+  font-family: "El Messiri", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Rubik Wet Paint", cursive;
+  font-family: "Shadows Into Light", cursive;
+  color: #ec1f08;
+}
+/* SECCION NAV CELULAR */
+#navegar {
+  grid-area: navegar;
+}
+
+.display-none-escritorio {
+  display: none;
+}
+
+.colornav {
+  background-color: #333333;
+}
+
+.posicion-nav {
+  display: flex;
+  flex-direction: column;
+}
+.posicion-nav .sticky-nav {
+  position: sticky;
+  top: 0;
+}
+.posicion-nav .sticky-nav #colorli {
+  color: #FDFEFE;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 20px;
+}
+.posicion-nav .sticky-nav #boton-nav-bar {
+  background-color: #FDFEFE;
+}
+/* SECCION MAIN CELULAR */
+#relleno {
+  grid-area: relleno;
+}
+#relleno .fondo-body {
+  background-image: url(../img/wallpaper-skull.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+#relleno .fondo-body .fondo-articulos {
+  margin-top: 20px;
+  background-color: bisque;
+  border-radius: 5px;
+  width: 85%;
+  padding: 10px;
+}
+#relleno .fondo-body .h2-iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#relleno .fondo-body .h2-iframe h2 {
+  color: #FDFEFE;
+  margin-top: 20px;
+}
+#relleno .titulo-articulo-tablet-celular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#relleno .paginas-nav {
+  margin-top: 40px;
+}
+/* SECCION FOOTER CELULAR */
+#pie {
+  grid-area: pie;
+  background-color: #000000;
+}
+#pie .union-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+}
+#pie .union-footer .footer-font {
+  color: #FDFEFE;
+  font-family: "Shadows Into Light", cursive;
+  margin-bottom: 0;
+  margin-right: 17px;
+  margin-top: 20px;
+  text-align: center;
+}
+#pie .union-footer .estilo-footer {
+  display: flex;
+}
+#pie .union-footer .estilo-footer a img {
+  height: none;
+  width: none;
+}
+
+/* ------------------------------SECION TABLET-------------------------------- */
+@media (min-width: 576px) and (max-width: 1020px) {
+  .grilla {
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-template-areas: "encabezado encabezado encabezado" "navegar navegar navegar" "relleno relleno relleno" "pie pie pie";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 260px 60px auto 160px;
+  }
+  /* SECCION NAV TABLET */
+  .fondoli {
+    background-color: gray;
+    width: 90px;
+    padding: 5px;
+    border: 2px solid black;
+  }
+  /* SECCION MAIN TABLET */
+  .video {
+    width: 490px;
+    height: 460px;
+  }
+  /* SECCION FOOTER TABLET */
+  #pie {
+    grid-area: pie;
+    background-color: #000000;
+  }
+  #pie .union-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+  }
+  #pie .union-footer .footer-font {
+    font-size: 30px;
+    margin-right: 45px;
+  }
+  #pie .union-footer .estilo-footer {
+    display: flex;
+  }
+  #pie .union-footer .estilo-footer a img {
+    height: 80px;
+    width: 80px;
+  }
+}
+/*------------------------------------- SECCION DESKTOP PC ---------------------------------*/
+@media (min-width: 1021px) {
+  .grilla {
+    display: grid;
+    grid-template-areas: "encabezado encabezado encabezado" "relleno relleno relleno" "pie pie pie";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 287px auto 270px;
+  }
+
+  /* SECCION HEADER PC */
+  #encabezado {
+    grid-area: encabezado;
+    background-image: none;
+  }
+  #encabezado .direccion {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  #encabezado .direccion .display-none-escritorio {
+    display: block;
+  }
+  #encabezado .direccion .imagen {
+    height: 100%;
+    width: 375px;
+  }
+  #encabezado .direccion .texto-imagen {
+    font-family: "Rubik Wet Paint", cursive;
+    color: #ec1f08;
+    position: relative;
+    bottom: 80px;
+    margin-left: 35px;
+  }
+  #encabezado .direccion .header-pag {
+    height: 100%;
+    width: 100%;
+  }
+  #encabezado .direccion .header-pag .display-none-escritorio {
+    display: block;
+  }
+  #encabezado .direccion .header-pag .nav-escritorio {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+  #encabezado .direccion .header-pag .nav-escritorio li {
+    border: 10px double #FDFEFE;
+    padding: 10px;
+    background-color: gray;
+    font-size: 20px;
+  }
+  #encabezado .direccion .header-pag .nav-escritorio a {
+    text-decoration: none;
+    color: #FDFEFE;
+    font-family: "Courier New", Courier, monospace;
+  }
+  #encabezado .direccion .header-pag .nav-widh-escritorio {
+    width: 100%;
+    position: relative;
+    bottom: 64px;
+  }
+  /* SECCION NAV PC */
+  #navegar {
+    grid-area: navegar;
+  }
+  .display-none {
+    display: none;
+  }
+  /* SECCION MAIN PC */
+  #relleno {
+    grid-area: relleno;
+  }
+  #relleno .derecha-izquierda {
+    display: flex;
+  }
+  #relleno .derecha-izquierda .seccion-izquierda {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  #relleno .derecha-izquierda .seccion-izquierda .titulo-articulo-tablet-celular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #relleno .derecha-izquierda .seccion-izquierda .h2-iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  #relleno .derecha-izquierda .seccion-izquierda .h2-iframe h2 {
+    color: #FDFEFE;
+    margin-top: 0;
+  }
+  #relleno .derecha-izquierda .seccion-izquierda .h2-iframe .video {
+    width: 490px;
+    height: 460px;
+  }
+  #relleno .fondo-body .seccion-derecha {
+    height: 93%;
+    width: auto;
+  }
+  #relleno .fondo-body .seccion-derecha .sticky-formulario {
+    position: sticky;
+    top: 0;
+  }
+  #relleno .fondo-body .seccion-derecha .sticky-formulario .display-none-escritorio {
+    display: block;
+  }
+  #relleno .fondo-body .seccion-derecha .sticky-formulario .fondo-formulario {
+    height: 600px;
+    width: auto;
+    background-color: #020122;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  #relleno .fondo-body .seccion-derecha .sticky-formulario .fondo-formulario .alinear-formulario {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #relleno .fondo-body .seccion-derecha .sticky-formulario .fondo-formulario #fuente-formulario {
+    color: #FDFEFE;
+  }
+  #relleno .fondo-body .seccion-derecha .sticky-formulario .fondo-formulario #fuente-formulario .botones {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #relleno .fondo-body .seccion-derecha .sticky-formulario .fondo-formulario #fuente-formulario .ingresar-datos {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #relleno .fondo-body .fondo-articulos {
+    margin-top: 20px;
+    background-color: bisque;
+    border-radius: 5px;
+    width: 85%;
+    padding: 10px;
+  }
+  #relleno .fondo-body .h2-iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #relleno .paginas-nav {
+    margin-top: 40px;
+  }
+}
+/* SECCION FOOTER PC */
+#pie {
+  grid-area: pie;
+  background-color: #000000;
+}
+#pie .union-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+}
+#pie .union-footer .footer-font {
+  font-size: 40px;
+  margin-right: 45px;
+  margin-top: 45px;
+  text-align: center;
+}
+#pie .union-footer .estilo-footer {
+  display: flex;
+}
+#pie .union-footer .estilo-footer a img {
+  height: 100px;
+  width: 100px;
+}
+
+/*# sourceMappingURL=styles.css.map */
