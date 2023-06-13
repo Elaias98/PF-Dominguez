@@ -20,7 +20,7 @@
 
 
 <!-- LINKEADO CSS -->
-  <link rel="stylesheet" href="../css/stylomobile.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <title>Contactanos</title>
 </head>
 
@@ -29,141 +29,142 @@
 <body>
 <section class="grilla container-fluid ">
 
-    <header id="encabezado" class="row col-sm-12 col-md-12 col-lg-12 color ">
-  
-  
-  <section class="direccion">
-  <section >
-  <img src="../img/guitarist.jpg" alt="logo-pagina" class="imagen display-none-escritorio">  
-
-
-  <h1 class="texto-imagen">MUNDOMETAL</h1>
-
-
-
-  </section >
-
-  <section class="header-pag">
-
-  <img src="../img/metal-slipknot-nu-metal-wallpaper-preview.jpg" alt="logo-header " width="100%" height="100%" class="display-none-escritorio col-lg-12">
-  
-  
-  <nav class="display-none-escritorio nav-widh-escritorio">
-    <ul class="nav-escritorio">
-      <li><a href="../index.html"><strong>INICIO</strong></a></li>
-      <li><a href="./noticias.html"><strong> NOTICIAS</strong></a></li>
-      <li><a href="./bandas.html"><strong> BANDAS</strong></a></li>
-      <li><a href="./foro.html"><strong> FORO</strong></a></li>
-      <li><a href="./contactanos.html"><strong> CONTACTANOS</strong></a></li>
-    </ul>
-    </nav>
-
-  </section>
-
-  
-
+  <header id="header">
+    <section class="logo-barra">
+      <h1>MUNDOMETAL</h1>
+      <div class="logo">
+        <img src="../img/guitarist.jpg" alt="logo-pag" >
+        <!-- <h1>MUNDOMETAL</h1> -->
+      </div>
+      <div class="barra"> <!-- QUITE MI NAV ANULANDO MI BARRA DISPLAY: NONE -->
+        <img src="../img/metal-slipknot-nu-metal-wallpaper-preview.jpg" alt="barra-pag">
+        <nav class="ubicar-nav display-escritorio">       <!-- SI NO HACE FALTA, QUITAR DISPLAY - ESCRITORIO -->
+          <ul class="nav-flex">
+            <li><a href="../index.html"><strong>INICIO</strong></a></li>
+            <li><a href="../pages/noticias.html"><strong>NOTICIAS</strong></a></li>
+            <li><a href="../pages/bandas.html"><strong>BANDAS</strong></a></li>
+            <li><a href="../pages/foro.html"><strong>FORO</strong></a></li>
+            <li><a href="../pages/contactanos.html"><strong>CONTACTANOS</strong></a></li>
+          </ul>
+        </nav>
+      </div>
     </section>
-
-
-
-
-
-
-
-
-    </header>
-
-
-
-
-
-
-
-
-  <main id="relleno" class="row col-sm-12 col-md-12 col-lg-12">
-  <section class="fondo-body">
-
-    <article class="separacion">
-    <h2 class="titulo-art">CONTACTANOS</h2>
-
-    <h3 class="titulo-art"> ¿SUGERENCIAS? ¡AYUDANOS A CREECER!</h3>
-    
-    <fieldset class="titulo-art">                                     
-      <legend>FORMULARIO</legend>                              
-      <form action="">                                  <!--USAMOS "FORM" Para ingresar y guardar datos de usuario por lo general se lo usa cuando queremos contactar a alguien-->
-
-       <label for="NOMBRE" class="titulo alt1">NOMBRE:</label>             <!--SE AGREGA LABEL PARA RELACIONAR UNA CAJA VACIA CON EL TEXTO-->
- 
-       <input type="text" name="NOMBRE" id="NOMBRE">                             <!--TENEMOS 3 TIPO DE IMPUT. DE TEXTO, DE EMAIL, PASSWORD-->
- 
- 
-          <div>
-              <label for="EMAIL" class="titulo alt1">EMAIL:</label>
-         <input type="email" name="EMAIL" id="EMAIL">
-          </div>
-
-       <div>
-          <label for="CONTRASEÑA" class="titulo alt1">CONTRASEÑA:</label>
-          <input type="password" name="CONTRASEÑA" required>                <!--SE PUEDE AGREGAR "REQUIRED" EN CASO DE QUE SEA SI O SI NECESARIO INGRESAR EL DATO PARA CONTINUAR, EN ESTE CASO LA CONTRASEÑA -->
-          </div>
-
-       <textarea name="TUS DATOS" id="" cols="30" rows="10"></textarea>                <!--TEXTO AREA ES UNA CASILLA SIMPLEMENTE PARA INGRESAR CARACTERES-->
-
-
-          <div><input type="button" value="NORMAL">
-          <input type="submit" value="ENVIAR">
-          <input type="reset" value="RESET">
-          </div>
-      </form>
-
-  </fieldset>  
+  </header>
   
+  <nav class="navbar navbar-expand-xxl posicion-nav  colornav display-celular-tablet  " id="nav">
+    <div class="container-fluid sticky-nav" > <!--ACA HABIA UN STICKY-NAV-->
+        <a class="navbar-brand" href="#" id="colorli"><strong>Menu</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="boton-nav-bar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse tablet-margin" id="navbarNav">
+          <ul class="navbar-nav extender">
+            <li class="nav-item ">
+              <a class="nav-link active fondoli" aria-current="page" href="../index.html" id="colorli"><strong>Inicio</strong> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fondoli" href="../pages/noticias.html" id="colorli"><strong>Noticias</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fondoli" href="../pages/bandas.html" id="colorli"><strong>Bandas</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fondoli" href="../pages/foro.html" id="colorli"><strong>Foro</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fondoli" href="../pages/contactanos.html" id="colorli"><strong>Contactanos</strong></a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+<main id="main">
+  <section class="fondo-main flex-pc-contactanos">
+    <article class="izquierda-contactanos">
+      <h2><strong>CONTACTANOS</strong></h2>
+      <h3><strong>¿SUGERENCIAS? ¡AYUDANOS A CREECER!</strong> </h3>
+      <fieldset class="titulo-art">                                     
+        <legend>FORMULARIO</legend>                              
+      <form action="" class="tamanio">                                  
+        <label for="NOMBRE" class="titulo alt1">NOMBRE:</label>             
+        <input type="text" name="NOMBRE" id="NOMBRE" class="estilo-input">                            
+        <div>
+          <label for="EMAIL" class="titulo alt1">EMAIL:</label>
+          <input type="email" name="EMAIL" id="EMAIL"class="estilo-input">
+        </div>
+        <div>
+          <label for="CONTRASEÑA" class="titulo alt1">CONTRASEÑA:</label>
+          <input type="password" name="CONTRASEÑA" required class="estilo-input">                
+        </div>
+          <textarea name="TUS DATOS" id="" cols="30" rows="10" class="texto-tarea" ></textarea>                
+        <div class="botones">
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="REFRESH">
+        </div>
+      </form>
+    </fieldset>
+
+  <article class="separacion">
+    <h4 class="titulo-art">REDES SOCIALES</h4>
+    <a href="https://es-la.facebook.com/">FACEBOOK</a>
+    <a href="https://twitter.com/">TWITTER</a>
+    <a href="https://www.instagram.com/">INSTAGRAM</a>
+    <h4 class="titulo-art">DONACIONES</h4>
+    <a href="https://www.patreon.com/">PATREON</a>
+    </article>
+    </article>
+
+<article class="derecha-contactanos">
+  <h2>NORMAS PARA TOMAR TU COMENTARIO</h2>
+  <div class="row">
+    <div class="col-4">
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">1</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">2</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">3</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">4</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <h4 id="list-item-1">REGLA 1</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ipsa possimus exercitationem deleniti assumenda architecto temporibus quis eaque pariatur quidem, id tenetur cumque repellat sed eligendi. Optio adipisci illo nam.</p>
+        <h4 id="list-item-2">REGLA 2</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, accusamus iste ex eos non libero? Expedita, quia quasi! Itaque recusandae accusamus facere error debitis dolorum iusto dignissimos soluta, aut necessitatibus?</p>
+        <h4 id="list-item-3">REGLA 3</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit eos numquam maxime fugit quam placeat, dolores iusto atque harum delectus iure, itaque eius voluptatum, assumenda ex asperiores. Ratione, quaerat autem.</p>
+        <h4 id="list-item-4">REGLA 4</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia enim distinctio magni corporis, qui facere ratione saepe dicta unde error similique numquam adipisci iste repellat doloremque nostrum libero ut dolorem.</p>
+      </div>
+    </div>
+  </div>  
 </article>
-
-
-<article class="separacion">
-<h4 class="titulo-art">REDES SOCIALES</h4>
-<a href="https://es-la.facebook.com/">FACEBOOK</a>
-<a href="https://twitter.com/">TWITTER</a>
-<a href="https://www.instagram.com/">INSTAGRAM</a>
-
-
-<h5 class="titulo-art">DONACIONES</h5>
-<a href="https://www.patreon.com/">PATREON</a>
-
-</article>
-
-
   </section>
-    </main>
+</main>
 
 
-    <footer  id="pie" class="row col-sm-12 col-md-12 col-lg-12" >
-
-    <article class="union-footer">
-    <p class="footer-font">
-      Redes sociales
-    </p>
-    <section class="estilo-footer">
-    
-    <a href="https://web.whatsapp.com/" target="_blank"> <img src="../img/whatsapp-g85b8628a3_1280.png" alt="wsp-logo" height="40px" width="40px"> </a>
-
-    <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram-gd53065413_1280.png" alt="ig-logo" height="40px" width="40px"></a>
-   
-    <a href="https://twitter.com/" target="_blank"><img src="../img/twitter-g694e29f47_1280.png" alt="twit-logo" height="40px" width="40px"></a>
-  </section>
-
-  </article>
-
-
+    <footer id="footer" class="tamanio-footer lista-redes">
+      <ul class="lista-web">
+        <p><strong>NAVEGAR</strong></p>
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="../pages/noticias.html">NOTICIAS</a></li>
+        <li><a href="../pages/bandas.html">BANDAS</a></li>
+        <li><a href="../pages/foro.html">FORO</a></li>
+        <li><a href="../pages/contactanos.html">CONTACTANOS</a></li>
+      </ul>
+      <div class="redes-sociales">
+        <p><strong>REDES SOCIALES</strong></p>
+          <div class="display-redes">
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp-g85b8628a3_1280.png" alt="logo-wsp"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram-gd53065413_1280.png" alt="logo-ig"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="../img/twitter-g694e29f47_1280.png" alt="logo-twiiter"></a>
+          </div>
+      </div>
     </footer>
-
-
-
-
-</section>
-
-<!-- BOOTSTRAP -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+    
+      </section>
+      <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
 </html>

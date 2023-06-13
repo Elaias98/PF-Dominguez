@@ -1,0 +1,179 @@
+#main{
+    grid-area: main;
+    .fondo-main{
+
+    }
+    .flex-pc-noticias{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            width: 100%;
+            font-size: 35px;
+            color: white;
+            font-family: "Shadows Into Light", cursive;
+            text-align: left;
+            margin-top: 15px;
+            margin-right: -40px;
+        }
+        h3{
+            width: 100%;
+            font-size: 35px;
+            color: red;
+            font-family: "Shadows Into Light", cursive;
+            text-align: left;
+            margin-top: 15px;
+            margin-right: -40px;
+        }
+        .noticia1{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            .caja-noticias{
+                    background-color: bisque;
+                    border-radius:5px;
+                    padding: 10px; 
+                    width: 54%;
+                    margin-left: 20px;
+            }
+            .tamanio-carrusel{
+                height: max-content;
+                width: auto;
+                position: sticky;
+                top: 0;
+                .carousel-item{
+                    .img-ancho{
+                        width: 550px;
+                    }
+                }
+            }    
+        }
+        .pagina-navegacion2{
+            margin: 40px 0px;
+        }
+    }
+}
+
+@media (max-width:1020px){ 
+    #main{
+        grid-area: main;
+        .fondo-main{
+        }
+        .flex-pc-noticias{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                width: 100%;
+                font-size: 25px;
+                color: white;
+                font-family: "Shadows Into Light", cursive;
+                text-align: left;
+                margin-top: 15px;
+                margin-right: -40px;
+            }
+            h3{
+                width: 100%;
+                font-size: 25px;
+                color: red;
+                font-family: "Shadows Into Light", cursive;
+                text-align: left;
+                margin-top: 15px;
+                margin-right: -40px;
+            }
+            .noticia1{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                .caja-noticias{
+                        font-size: 13px;
+                        background-color: bisque;
+                        border-radius:5px;
+                        padding: 10px; 
+                        width: 54%;
+                        margin-left: 20px;
+                }
+                .tamanio-carrusel{
+                    height: max-content;
+                    width: auto;
+                    position: sticky;
+                    top: 0;
+                    .carousel-item{
+                        .img-ancho{
+                            width: 350px;
+                        }
+                    }
+                }    
+            }
+            .pagina-navegacion2{
+                margin: 40px 0px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px){
+    #main{
+        grid-area: main;
+        .fondo-main{
+        }
+        .flex-pc-noticias{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                width: 100%;
+                font-size: 22px;
+                color: white;
+                font-family: "Shadows Into Light", cursive;
+                text-align: left;
+                margin-top: 15px;
+                margin-right: -40px;
+            }
+            h3{
+                width: 100%;
+                font-size: 20px;
+                color: red;
+                font-family: "Shadows Into Light", cursive;
+                text-align: left;
+                margin-top: 15px;
+                margin-right: -40px;
+            }
+            .noticia1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                .caja-noticias{
+                        font-size: 10px;
+                        background-color: bisque;
+                        border-radius:5px;
+                        padding: 10px; 
+                        width: 94%;
+                        margin-left: 10px;
+                }
+                .tamanio-carrusel{
+                    height: max-content;
+                    width: max-content;
+                    position: sticky;
+                    top: 0;
+                    .carousel-item{
+                        .img-ancho{
+                            width: 210px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }    
+            }
+            .pagina-navegacion2{
+                margin: 40px 0px;
+            }
+        }
+    }
+}

@@ -1,0 +1,245 @@
+#main{
+    .fondo-main{
+
+    }
+    .flex-pc-contactanos{
+        width: 100%;
+        display: flex;
+        .izquierda-contactanos{
+            height: 100%;
+            width: 50%;
+            margin-left: 2%;
+            h2{
+            font-size: 35px;
+            color: white;
+            font-family: 'Shadows Into Light', cursive;
+            margin-top: 15px;
+            }
+            h3{
+            font-size: 35px;
+            color: red;
+            font-family: 'Shadows Into Light', cursive;
+            
+            }
+            .titulo-art{
+                color: white;
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 20px;
+                .tamanio{
+                    margin-bottom: 10px;
+                    .estilo-input{
+                        width: 200px;
+                        margin: 10px;
+                    }
+                    .texto-tarea{
+                        width: 315px;
+                    }
+                    .botones{
+                        display: flex;
+                        justify-content: space-around;
+                        width: 307px;
+                    }
+                }
+            }
+            .separacion{
+                margin: 10px 0px;
+                h4{
+                    color: white;
+                    font-family: 'Shadows Into Light', cursive;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .derecha-contactanos{
+            height: 100%;
+            width: 50%;
+            h2{
+                margin-top: 35px;
+                font-size: 35px;
+                color: white;
+                font-family: 'Shadows Into Light', cursive;
+            }
+            .row{
+                .col-4{
+                    margin-top: 50px;
+                }
+                .col-8{
+                    margin-top: 50px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1020px){ 
+#main{
+    .fondo-main{
+
+    }
+    .flex-pc-contactanos{
+        width: 100%;
+        display: flex;
+        .izquierda-contactanos{
+            height: 100%;
+            width: 50%;
+            margin-left: 2%;
+            h2{
+                font-size: 25px;
+                color: white;
+                font-family: 'Shadows Into Light', cursive;
+                margin-top: 15px;
+                // margin-left: 2%; 
+            }
+            h3{
+                font-size: 25px;
+                color: red;
+                font-family: 'Shadows Into Light', cursive;
+            //     margin-left: 2%; 
+            }
+            .titulo-art{
+                color: white;
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 15px;
+                .tamanio{
+                    margin-bottom: 10px;
+                    .estilo-input{
+                        width: 150px;
+                        margin: 10px;
+                    }
+                    .texto-tarea{
+                        width: 270px;
+                    }
+                    .botones{
+                        display: flex;
+                        justify-content: space-around;
+                        width: 280px;
+                    }
+                }
+            }
+            .separacion{
+                margin: 10px 0px;
+                h4{
+                    color: white;
+                    font-family: 'Shadows Into Light', cursive;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .derecha-contactanos{
+            height: 100%;
+            width: 50%;
+            h2{
+                margin-top: 35px;
+                font-size: 25px;
+                color: white;
+                font-family: 'Shadows Into Light', cursive;
+            }
+            .row{
+                .col-4{
+                    margin-top: 50px;
+                }
+                .col-8{
+                    margin-top: 50px;
+                    color: white;
+                    h4{
+                        font-size: 15px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+@media (max-width:576px){
+    #main{
+        .fondo-main{
+    
+        }
+        .flex-pc-contactanos{
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            .izquierda-contactanos{
+                height: 100%;
+                width: 100%;
+                margin-left: 2%;
+                h2{
+                    // position: relative;
+                    font-size: 20px;
+                    color: white;
+                    font-family: 'Shadows Into Light', cursive;
+                    // bottom: 80%;    
+                    // margin-left: 2%;
+                }
+                h3{
+                    font-size: 20px;
+                    color: red;
+                    font-family: 'Shadows Into Light', cursive;
+                //     margin-left: 2%; 
+                }
+                .titulo-art{
+                    color: white;
+                    font-family: 'Shadows Into Light', cursive;
+                    font-size: 15px;
+                    .tamanio{
+                        margin-bottom: 10px;
+                        .estilo-input{
+                            width: 120px;
+                            margin: 10px;
+                        }
+                        .texto-tarea{
+                            width: 220px;
+                        }
+                        .botones{
+                            display: flex;
+                            justify-content: space-around;
+                            width: 230px;
+                        }
+                    }
+                }
+                .separacion{
+                    margin: 10px 0px;
+                    h4{
+                        color: white;
+                        font-family: 'Shadows Into Light', cursive;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .derecha-contactanos{
+                height: 100%;
+                width: 100%;
+                h2{
+                    margin-top: 15%;
+                    font-size: 15px;
+                    margin-left: 2%;
+                    color: white;
+                    font-family: "Shadows Into Light", cursive;
+                }
+                .row{
+                    .col-4{
+                        margin-top: 50px;
+                    }
+                    .col-8{
+                        margin-top: 50px;
+                        color: white;
+                        h4{
+                            font-size: 15px;
+                        }
+                        p{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
