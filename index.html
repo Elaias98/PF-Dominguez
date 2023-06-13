@@ -14,11 +14,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Oswald:wght@200&family=Rubik+Wet+Paint&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
+<!-- META-NAME -->
+<meta name="description" content="Vista previa de lo mas destacado de tus bandas favoritas acompañado de RadioMetal las 24/7">
+<meta name="keyword" content="HTML, METAL, MUSICA, NOTICIAS, 24/7, SPANISH, LOGIN, ARGENTINA">
 
 <!-- BOOTSTRAP -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
+<!-- LINK FAVICON -->
+<link rel="shortcut icon" href="./img/icons8-música-metal-16.png" type="image/x-icon">
+
+<!-- LINK ANIMATION -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <!-- LINKEADO CSS -->
   <link rel="stylesheet" href="./css/styles.css">
@@ -33,7 +40,7 @@
   <section class="logo-barra">
     <h1>MUNDOMETAL</h1>
     <div class="logo">
-      <img src="./img/guitarist.jpg" alt="logo-pag" >
+      <a href="./index.html"><img src="./img/guitarist.jpg" alt="logo-pag" ></a>
       <!-- <h1>MUNDOMETAL</h1> -->
     </div>
     <div class="barra"> <!-- QUITE MI NAV ANULANDO MI BARRA DISPLAY: NONE -->
@@ -83,7 +90,7 @@
   <section class="fondo-main flex-pc">
     <!-- SECCION IZQUIERDA -->
     <div class="izquierda">
-      <h2><strong>MENU PRINCIPAL</strong></h2>
+      <h2 data-aos="fade-right"><strong>MENU PRINCIPAL</strong></h2>
       <article>
         <h3><strong>METAL 24/7</strong></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/3Bu0YAUI4is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -134,7 +141,7 @@
     </div>
       <!-- SECCION DERECHA -->
     <div class="derecha">
-        <section class="fondo-formulario sticky-formulario display-escritorio">
+        <section class="fondo-formulario sticky-formulario display-escritorio " data-aos="zoom-in-left">
         <form class="alinear-formulario" id="fuente-formulario">
             <h3><strong>INICIAR SESION</strong></h3>
             <div>
@@ -180,5 +187,10 @@
   </section>
   <!-- BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <!-- ANIMACION -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

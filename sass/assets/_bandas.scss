@@ -1,18 +1,27 @@
 #main{
     .fondo-main{
-
     }
     .flex-pc-bandas{
         height: 100%;
         width: 100%;
+        @mixin propiedad-h2($tamanio,$color,$padding){
+            font-size: $tamanio;
+            color: $color;
+            padding-top: $padding;
+        }
         h2{
-            width: 100%;
-            font-size: 35px;
-            color: #f7f7f7;
-            font-family: "Shadows Into Light", cursive;
-            padding-top: 15px;
+            @include propiedad-h2(35px,white,15px);
+            font-family:"Shadows Into Light", cursive; 
             margin-left: 2%;
-}
+        }
+//         h2{
+//             width: 100%;
+//             font-size: 35px;
+//             color: #f7f7f7;
+//             font-family: "Shadows Into Light", cursive;
+//             padding-top: 15px;
+//             margin-left: 2%;
+// }
         }
         .columnas-celdas-art{
             display: flex;
@@ -37,18 +46,27 @@
 @media (max-width:1020px){ 
     #main{
         .fondo-main{
-    
         }
         .flex-pc-bandas{
             height: 100%;
             width: 100%;
-            h2{
-                width: 100%;
-                font-size: 25px;
-                color: #f7f7f7;
-                font-family: "Shadows Into Light", cursive;
-                padding-top: 15px;
+            @mixin propiedad-h2($tamanio,$color,$padding){
+                font-size: $tamanio;
+                color: $color;
+                padding-top: $padding;
             }
+            h2{
+                @include propiedad-h2(25px,white,15px);
+                font-family:"Shadows Into Light", cursive; 
+                margin-left: 2%;
+            }
+            // h2{
+            //     width: 100%;
+            //     font-size: 25px;
+            //     color: #f7f7f7;
+            //     font-family: "Shadows Into Light", cursive;
+            //     padding-top: 15px;
+            // }
             }
             .columnas-celdas-art{
                 display: flex;
@@ -80,13 +98,23 @@
         .flex-pc-bandas{
             height: 100%;
             width: 100%;
-            h2{
-                width: 100%;
-                font-size: 15px;
-                color: #f7f7f7;
-                font-family: "Shadows Into Light", cursive;
-                padding-top: 15px;
+            @mixin propiedad-h2($tamanio,$color,$padding){
+                font-size: $tamanio;
+                color: $color;
+                padding-top: $padding;
             }
+            h2{
+                @include propiedad-h2(15px,white,15px);
+                font-family:"Shadows Into Light", cursive; 
+                margin-left: 2%;
+            }
+            // h2{
+            //     width: 100%;
+            //     font-size: 15px;
+            //     color: #f7f7f7;
+            //     font-family: "Shadows Into Light", cursive;
+            //     padding-top: 15px;
+            // }
             }
             .columnas-celdas-art{
                 display: flex;

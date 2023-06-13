@@ -1,5 +1,5 @@
 $blanco:#f7f7f7;
-$rojo:#fd0707ec;
+
 $negro:rgb(0, 0, 0);
 *{
     margin: 0;
@@ -23,7 +23,7 @@ $negro:rgb(0, 0, 0);
         display: flex;
         h1{
             position: relative;
-            color: rgba(253, 7, 7, 0.9254901961);
+            color: red;
             font-family: "Rubik Wet Paint", cursive;
             top: 81%;
             left: 2%;
@@ -48,14 +48,22 @@ $negro:rgb(0, 0, 0);
                 display: flex;
                 justify-content: space-around;
                 list-style: none;
-                li{     
+                li{
+                    &:hover{       
+                        transition: transform 1s;
+                        transform: scale(1.2);    
+                    }   
                     a{
                         font-size: 30px;
                         font-family: 'Shadows Into Light', cursive;
                         text-decoration: none; 
                         color: $blanco;
                         background-color: $negro;
-                        padding: 15px 20px;                    
+                        padding: 15px 20px;
+                        &:hover{
+                            background-color: white;
+                            color: black;    
+                        }
                     }
                 }
             }
@@ -123,7 +131,7 @@ display: none;
                     }
                     h4{
                         margin-top: 40px;
-                        background-color: $rojo;
+                        background-color: red;
                         padding: 0px 5px;
                         width: max-content;
                         border-top-right-radius: 10px;
@@ -215,7 +223,7 @@ display: none;
                 a{
                 margin-bottom: 10px;
                 text-decoration: none;
-                color: $rojo;
+                color: red;
                 font-size: 25px;
                 font-family: 'Shadows Into Light', cursive;
                 }
@@ -358,7 +366,7 @@ display: none;
                         a{
                         margin-bottom: 10px;
                         text-decoration: none;
-                        color: $rojo;
+                        color: red;
                         font-size: 20px;
                         font-family: 'Shadows Into Light', cursive;
                         }
@@ -513,7 +521,7 @@ display: none;
                 a{
                 margin-bottom: 10px;
                 text-decoration: none;
-                color: $rojo;
+                color: red;
                 font-size: 10px;
                 font-family: 'Shadows Into Light', cursive;
                 }

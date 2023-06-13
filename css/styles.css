@@ -20,7 +20,7 @@
 }
 #header .logo-barra h1 {
   position: relative;
-  color: rgba(253, 7, 7, 0.9254901961);
+  color: red;
   font-family: "Rubik Wet Paint", cursive;
   top: 81%;
   left: 2%;
@@ -48,6 +48,10 @@
   justify-content: space-around;
   list-style: none;
 }
+#header .logo-barra .barra .ubicar-nav .nav-flex li:hover {
+  transition: transform 1s;
+  transform: scale(1.2);
+}
 #header .logo-barra .barra .ubicar-nav .nav-flex li a {
   font-size: 30px;
   font-family: "Shadows Into Light", cursive;
@@ -55,6 +59,10 @@
   color: #f7f7f7;
   background-color: rgb(0, 0, 0);
   padding: 15px 20px;
+}
+#header .logo-barra .barra .ubicar-nav .nav-flex li a:hover {
+  background-color: white;
+  color: black;
 }
 #header .logo-barra .barra img {
   height: 100%;
@@ -120,7 +128,7 @@
 }
 #main .flex-pc .izquierda .centrar-caja h4 {
   margin-top: 40px;
-  background-color: rgba(253, 7, 7, 0.9254901961);
+  background-color: red;
   padding: 0px 5px;
   width: max-content;
   border-top-right-radius: 10px;
@@ -210,7 +218,7 @@
 .lista-redes .lista-web li a {
   margin-bottom: 10px;
   text-decoration: none;
-  color: rgba(253, 7, 7, 0.9254901961);
+  color: red;
   font-size: 25px;
   font-family: "Shadows Into Light", cursive;
 }
@@ -325,7 +333,7 @@
   .lista-redes .lista-web li a {
     margin-bottom: 10px;
     text-decoration: none;
-    color: rgba(253, 7, 7, 0.9254901961);
+    color: red;
     font-size: 20px;
     font-family: "Shadows Into Light", cursive;
   }
@@ -459,7 +467,7 @@
   .lista-redes .lista-web li a {
     margin-bottom: 10px;
     text-decoration: none;
-    color: rgba(253, 7, 7, 0.9254901961);
+    color: red;
     font-size: 10px;
     font-family: "Shadows Into Light", cursive;
   }
@@ -653,11 +661,10 @@
   width: 100%;
 }
 #main .flex-pc-bandas h2 {
-  width: 100%;
   font-size: 35px;
-  color: #f7f7f7;
-  font-family: "Shadows Into Light", cursive;
+  color: white;
   padding-top: 15px;
+  font-family: "Shadows Into Light", cursive;
   margin-left: 2%;
 }
 #main .columnas-celdas-art {
@@ -685,11 +692,11 @@
     width: 100%;
   }
   #main .flex-pc-bandas h2 {
-    width: 100%;
     font-size: 25px;
-    color: #f7f7f7;
-    font-family: "Shadows Into Light", cursive;
+    color: white;
     padding-top: 15px;
+    font-family: "Shadows Into Light", cursive;
+    margin-left: 2%;
   }
   #main .columnas-celdas-art {
     display: flex;
@@ -718,11 +725,11 @@
     width: 100%;
   }
   #main .flex-pc-bandas h2 {
-    width: 100%;
     font-size: 15px;
-    color: #f7f7f7;
-    font-family: "Shadows Into Light", cursive;
+    color: white;
     padding-top: 15px;
+    font-family: "Shadows Into Light", cursive;
+    margin-left: 2%;
   }
   #main .columnas-celdas-art {
     display: flex;
@@ -1088,7 +1095,7 @@
   #main .flex-pc-contactanos {
     width: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   #main .flex-pc-contactanos .izquierda-contactanos {
     height: 100%;
