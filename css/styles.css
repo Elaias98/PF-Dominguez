@@ -357,7 +357,7 @@
   .grilla {
     display: grid;
     grid-template-areas: "nav header header" "nav main main" "nav footer footer";
-    grid-template-columns: 105px repeat(2, 1fr);
+    grid-template-columns: 75px repeat(2, 1fr);
     grid-template-rows: 200px auto 160px;
   }
   #nav {
@@ -387,7 +387,8 @@
   .posicion-nav .sticky-nav #colorli {
     color: #f7f7f7;
     font-family: "Shadows Into Light", cursive;
-    font-size: 20px;
+    font-size: 12px;
+    margin-top: 80%;
   }
   .posicion-nav .sticky-nav #boton-nav-bar {
     background-color: #f7f7f7;
@@ -684,6 +685,7 @@
 #main .columnas-celdas-art .celdas-art a {
   color: white;
   margin: 5px;
+  text-align: center;
 }
 
 @media (max-width: 1020px) {
@@ -816,6 +818,12 @@
   flex-direction: column;
   align-items: baseline;
 }
+#main .flex-pc-foro .caja-comentarios .barra-enviar {
+  width: 210px;
+  margin-top: 10px;
+  margin-left: 2%;
+  text-align: center;
+}
 
 @media (max-width: 1020px) {
   #main {
@@ -881,6 +889,13 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
+  }
+  #main .flex-pc-foro .caja-comentarios .barra-enviar {
+    width: 160px;
+    margin-top: 10px;
+    margin-left: 2%;
+    text-align: center;
+    font-size: 15px;
   }
 }
 @media (max-width: 576px) {
@@ -950,6 +965,13 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
+  }
+  #main .flex-pc-foro .caja-comentarios .barra-enviar {
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 2%;
+    text-align: center;
+    font-size: 6px;
   }
 }
 #main .flex-pc-contactanos {

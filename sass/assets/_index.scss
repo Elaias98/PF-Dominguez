@@ -400,7 +400,7 @@ display: none;
     "nav header header"
     "nav main main"
     "nav footer footer";
-    grid-template-columns: 105px repeat(2,1fr);
+    grid-template-columns: 75px repeat(2,1fr);
     grid-template-rows: 200px auto 160px;
 }
 
@@ -434,7 +434,8 @@ display: none;
         #colorli{
             color: $blanco;
             font-family: 'Shadows Into Light', cursive;
-            font-size: 20px;
+            font-size: 12px;
+            margin-top: 80%;
         }
         #boton-nav-bar{
             background-color: $blanco;

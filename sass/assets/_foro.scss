@@ -62,7 +62,12 @@
                 display: flex;
                 flex-direction: column;
                 align-items: baseline;
-                
+                .barra-enviar{
+                    width: 210px; 
+                    margin-top: 10px; 
+                    margin-left: 2%; 
+                    text-align: center
+                }
             }
         }
 }
@@ -132,7 +137,13 @@
                     display: flex;
                     flex-direction: column;
                     align-items: baseline;
-                    
+                    .barra-enviar{
+                        width: 160px; 
+                        margin-top: 10px; 
+                        margin-left: 2%; 
+                        text-align: center;
+                        font-size: 15px;
+                    }
                 }
             }
     }
@@ -206,7 +217,13 @@
                     display: flex;
                     flex-direction: column;
                     align-items: baseline;
-                    
+                    .barra-enviar{
+                        width: 70px;
+                        margin-top: 10px;
+                        margin-left: 2%;
+                        text-align: center;
+                        font-size: 6px;
+                    }
                 }
             }
     }
