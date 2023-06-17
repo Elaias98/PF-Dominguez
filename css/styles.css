@@ -1,15 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.grilla {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px auto 270px;
-}
-
 #header {
   grid-area: header;
 }
@@ -56,8 +44,8 @@
   font-size: 30px;
   font-family: "Shadows Into Light", cursive;
   text-decoration: none;
-  color: #f7f7f7;
-  background-color: rgb(0, 0, 0);
+  color: white;
+  background-color: black;
   padding: 15px 20px;
 }
 #header .logo-barra .barra .ubicar-nav .nav-flex li a:hover {
@@ -70,6 +58,48 @@
 }
 #header .logo-barra .barra .display-escritorio {
   display: block;
+}
+
+@media (max-width: 1020px) {
+  .grilla {
+    display: grid;
+    grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 260px 60px auto 200px;
+  }
+  #header {
+    grid-area: header;
+  }
+  #header .logo-barra {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-image: url(../img/metal-slipknot-nu-metal-wallpaper-preview.jpg);
+    background-size: cover;
+  }
+  #header .logo-barra h1 {
+    font-family: "Shadows Into Light", cursive;
+    position: relative;
+    color: rgba(253, 7, 7, 0.9254901961);
+    top: 0;
+  }
+  #header .logo-barra .logo {
+    display: none;
+  }
+  #header .logo-barra .barra {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grilla {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px auto 270px;
 }
 
 #nav {
@@ -102,13 +132,13 @@
   align-items: center;
 }
 #main .flex-pc .izquierda h2 {
-  width: 100%;
   font-size: 35px;
   color: #f7f7f7;
   font-family: "Shadows Into Light", cursive;
-  text-align: left;
   margin-top: 15px;
-  margin-right: -40px;
+  width: 100%;
+  text-align: left;
+  margin-left: 6%;
 }
 #main .flex-pc .izquierda h3 {
   font-size: 30px;
@@ -190,81 +220,12 @@
   display: block;
 }
 
-#footer {
-  grid-area: footer;
-  background-color: rgb(0, 0, 0);
-}
-
-.tamanio-footer {
-  height: 100%;
-  width: 100%;
-}
-
-.lista-redes {
-  display: flex;
-  justify-content: space-between;
-}
-.lista-redes .lista-web p {
-  color: #f7f7f7;
-  font-size: 30px;
-  font-family: "Shadows Into Light", cursive;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-.lista-redes .lista-web li {
-  list-style: none;
-}
-.lista-redes .lista-web li a {
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: red;
-  font-size: 25px;
-  font-family: "Shadows Into Light", cursive;
-}
-.lista-redes .redes-sociales p {
-  color: #f7f7f7;
-  font-size: 30px;
-  font-family: "Shadows Into Light", cursive;
-  text-align: center;
-  margin-top: 40px;
-}
-.lista-redes .redes-sociales .display-redes {
-  display: flex;
-}
-.lista-redes .redes-sociales .display-redes img {
-  height: 100px;
-  width: 100px;
-}
-
 @media (max-width: 1020px) {
   .grilla {
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 260px 60px auto 200px;
-  }
-  #header {
-    grid-area: header;
-  }
-  #header .logo-barra {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    background-image: url(../img/metal-slipknot-nu-metal-wallpaper-preview.jpg);
-    background-size: cover;
-  }
-  #header .logo-barra h1 {
-    font-family: "Shadows Into Light", cursive;
-    position: relative;
-    color: rgba(253, 7, 7, 0.9254901961);
-    top: 0;
-  }
-  #header .logo-barra .logo {
-    display: none;
-  }
-  #header .logo-barra .barra {
-    display: none;
   }
   #nav {
     grid-area: nav;
@@ -307,50 +268,12 @@
   }
   #main .flex-pc .izquierda h2 {
     font-size: 25px;
+    width: 30%;
+    text-align: center;
+    margin-left: 0%;
   }
   #main .flex-pc .derecha {
     display: none;
-  }
-  .tamanio-footer {
-    height: 100%;
-    width: 100%;
-  }
-  .lista-redes {
-    display: flex;
-    justify-content: space-between;
-  }
-  .lista-redes .lista-web p {
-    color: #f7f7f7;
-    font-size: 20px;
-    font-family: "Shadows Into Light", cursive;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-  .lista-redes .lista-web li {
-    list-style: none;
-  }
-  .lista-redes .lista-web li a {
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: red;
-    font-size: 20px;
-    font-family: "Shadows Into Light", cursive;
-  }
-  .lista-redes .redes-sociales p {
-    color: #f7f7f7;
-    font-size: 20px;
-    font-family: "Shadows Into Light", cursive;
-    text-align: center;
-    margin-top: 35px;
-  }
-  .lista-redes .redes-sociales .display-redes {
-    display: flex;
-  }
-  .lista-redes .redes-sociales .display-redes img {
-    margin-top: -10px;
-    height: 80px;
-    width: 80px;
   }
 }
 @media (max-width: 576px) {
@@ -387,8 +310,8 @@
   .posicion-nav .sticky-nav #colorli {
     color: #f7f7f7;
     font-family: "Shadows Into Light", cursive;
-    font-size: 12px;
-    margin-top: 80%;
+    font-size: 13px;
+    margin-top: 51%;
   }
   .posicion-nav .sticky-nav #boton-nav-bar {
     background-color: #f7f7f7;
@@ -408,6 +331,8 @@
   }
   #main .flex-pc .izquierda h2 {
     font-size: 22px;
+    width: 93%;
+    text-align: left;
   }
   #main .flex-pc .izquierda h3 {
     font-size: 20px;
@@ -440,57 +365,6 @@
   #main .flex-pc .izquierda .caja-destacado p {
     font-size: 10px;
   }
-  #footer {
-    grid-area: footer;
-  }
-  .tamanio-footer {
-    height: 100%;
-    width: 100%;
-  }
-  .lista-redes {
-    display: flex;
-    justify-content: end;
-  }
-  .lista-redes .lista-web {
-    display: none;
-  }
-  .lista-redes .lista-web p {
-    color: #f7f7f7;
-    font-size: 15px;
-    font-family: "Shadows Into Light", cursive;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-  .lista-redes .lista-web li {
-    list-style: none;
-  }
-  .lista-redes .lista-web li a {
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: red;
-    font-size: 10px;
-    font-family: "Shadows Into Light", cursive;
-  }
-  .lista-redes .redes-sociales {
-    display: flex;
-    flex-direction: column;
-  }
-  .lista-redes .redes-sociales p {
-    color: #f7f7f7;
-    font-size: 15px;
-    font-family: "Shadows Into Light", cursive;
-    text-align: center;
-    margin-top: 40px;
-  }
-  .lista-redes .redes-sociales .display-redes {
-    display: flex;
-  }
-  .lista-redes .redes-sociales .display-redes img {
-    margin-top: -10px;
-    height: 50px;
-    width: 50px;
-  }
 }
 #main {
   grid-area: main;
@@ -503,22 +377,18 @@
   align-items: center;
 }
 #main .flex-pc-noticias h2 {
-  width: 100%;
   font-size: 35px;
+  margin-top: 15px;
+  width: 97%;
   color: white;
   font-family: "Shadows Into Light", cursive;
-  text-align: left;
-  margin-top: 15px;
-  margin-right: -40px;
 }
 #main .flex-pc-noticias h3 {
-  width: 100%;
+  width: 97%;
   font-size: 35px;
   color: red;
   font-family: "Shadows Into Light", cursive;
-  text-align: left;
   margin-top: 15px;
-  margin-right: -40px;
 }
 #main .flex-pc-noticias .noticia1 {
   display: flex;
@@ -557,22 +427,18 @@
     align-items: center;
   }
   #main .flex-pc-noticias h2 {
-    width: 100%;
+    width: 0;
     font-size: 25px;
     color: white;
     font-family: "Shadows Into Light", cursive;
-    text-align: left;
     margin-top: 15px;
-    margin-right: -40px;
   }
   #main .flex-pc-noticias h3 {
-    width: 100%;
+    width: 95%;
     font-size: 25px;
     color: red;
     font-family: "Shadows Into Light", cursive;
-    text-align: left;
     margin-top: 15px;
-    margin-right: -40px;
   }
   #main .flex-pc-noticias .noticia1 {
     display: flex;
@@ -612,22 +478,18 @@
     align-items: center;
   }
   #main .flex-pc-noticias h2 {
-    width: 100%;
+    width: 97%;
     font-size: 22px;
     color: white;
     font-family: "Shadows Into Light", cursive;
-    text-align: left;
     margin-top: 15px;
-    margin-right: -40px;
   }
   #main .flex-pc-noticias h3 {
-    width: 100%;
+    width: 95%;
     font-size: 20px;
     color: red;
     font-family: "Shadows Into Light", cursive;
-    text-align: left;
     margin-top: 15px;
-    margin-right: -40px;
   }
   #main .flex-pc-noticias .noticia1 {
     display: flex;
@@ -641,7 +503,7 @@
     border-radius: 5px;
     padding: 10px;
     width: 94%;
-    margin-left: 10px;
+    margin-left: 0;
   }
   #main .flex-pc-noticias .noticia1 .tamanio-carrusel {
     height: max-content;
@@ -672,17 +534,20 @@
   display: flex;
   justify-content: space-around;
 }
-#main .columnas-celdas-art .celdas-art {
+#main .columnas-celdas-art .ancho {
+  width: 20%;
+}
+#main .columnas-celdas-art .ancho .celdas-art {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
-#main .columnas-celdas-art .celdas-art h3 {
+#main .columnas-celdas-art .ancho .celdas-art h3 {
   text-align: center;
   color: red;
   font-family: "Shadows Into Light", cursive;
 }
-#main .columnas-celdas-art .celdas-art a {
+#main .columnas-celdas-art .ancho .celdas-art a {
   color: white;
   margin: 5px;
   text-align: center;
@@ -699,6 +564,7 @@
     padding-top: 15px;
     font-family: "Shadows Into Light", cursive;
     margin-left: 2%;
+    text-align: center;
   }
   #main .columnas-celdas-art {
     display: flex;
@@ -732,6 +598,7 @@
     padding-top: 15px;
     font-family: "Shadows Into Light", cursive;
     margin-left: 2%;
+    text-align: left;
   }
   #main .columnas-celdas-art {
     display: flex;
@@ -840,6 +707,7 @@
     font-family: "Shadows Into Light", cursive;
     padding-top: 15px;
     margin-left: 2%;
+    text-align: center;
   }
   #main .flex-pc-foro h3 {
     font-size: 20px;
@@ -1055,6 +923,7 @@
     color: white;
     font-family: "Shadows Into Light", cursive;
     margin-top: 15px;
+    text-align: center;
   }
   #main .flex-pc-contactanos .izquierda-contactanos h3 {
     font-size: 25px;
@@ -1128,6 +997,7 @@
     font-size: 20px;
     color: white;
     font-family: "Shadows Into Light", cursive;
+    text-align: left;
   }
   #main .flex-pc-contactanos .izquierda-contactanos h3 {
     font-size: 20px;
@@ -1185,6 +1055,149 @@
   }
   #main .flex-pc-contactanos .derecha-contactanos .row .col-8 p {
     font-size: 10px;
+  }
+}
+#footer {
+  grid-area: footer;
+  background-color: black;
+}
+
+.tamanio-footer {
+  height: 100%;
+  width: 100%;
+}
+
+.lista-redes {
+  display: flex;
+  justify-content: space-between;
+}
+.lista-redes .lista-web p {
+  color: white;
+  font-size: 30px;
+  font-family: "Shadows Into Light", cursive;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.lista-redes .lista-web li {
+  list-style: none;
+}
+.lista-redes .lista-web li a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: red;
+  font-size: 25px;
+  font-family: "Shadows Into Light", cursive;
+}
+.lista-redes .redes-sociales p {
+  color: white;
+  font-size: 30px;
+  font-family: "Shadows Into Light", cursive;
+  text-align: center;
+  margin-top: 40px;
+}
+.lista-redes .redes-sociales .display-redes {
+  display: flex;
+}
+.lista-redes .redes-sociales .display-redes img {
+  height: 100px;
+  width: 100px;
+}
+
+@media (max-width: 1020px) {
+  .tamanio-footer {
+    height: 100%;
+    width: 100%;
+  }
+  .lista-redes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .lista-redes .lista-web p {
+    color: white;
+    font-size: 20px;
+    font-family: "Shadows Into Light", cursive;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .lista-redes .lista-web li {
+    list-style: none;
+  }
+  .lista-redes .lista-web li a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-family: "Shadows Into Light", cursive;
+  }
+  .lista-redes .redes-sociales p {
+    color: white;
+    font-size: 20px;
+    font-family: "Shadows Into Light", cursive;
+    text-align: center;
+    margin-top: 35px;
+  }
+  .lista-redes .redes-sociales .display-redes {
+    display: flex;
+  }
+  .lista-redes .redes-sociales .display-redes img {
+    margin-top: -10px;
+    height: 80px;
+    width: 80px;
+  }
+}
+@media (max-width: 576px) {
+  #footer {
+    grid-area: footer;
+  }
+  .tamanio-footer {
+    height: 100%;
+    width: 100%;
+  }
+  .lista-redes {
+    display: flex;
+    justify-content: end;
+  }
+  .lista-redes .lista-web {
+    display: none;
+  }
+  .lista-redes .lista-web p {
+    color: white;
+    font-size: 15px;
+    font-family: "Shadows Into Light", cursive;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .lista-redes .lista-web li {
+    list-style: none;
+  }
+  .lista-redes .lista-web li a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: red;
+    font-size: 10px;
+    font-family: "Shadows Into Light", cursive;
+  }
+  .lista-redes .redes-sociales {
+    display: flex;
+    flex-direction: column;
+  }
+  .lista-redes .redes-sociales p {
+    color: white;
+    font-size: 15px;
+    font-family: "Shadows Into Light", cursive;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .lista-redes .redes-sociales .display-redes {
+    display: flex;
+  }
+  .lista-redes .redes-sociales .display-redes img {
+    margin-top: -10px;
+    height: 50px;
+    width: 50px;
   }
 }
 

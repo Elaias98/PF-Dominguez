@@ -1,0 +1,153 @@
+//SECCION FOOTER PC
+#footer{
+    grid-area: footer;
+    background-color:black;
+}
+.tamanio-footer{
+    height: 100%;
+    width: 100%;
+    }
+    .lista-redes{
+        display: flex;
+        justify-content: space-between;
+        .lista-web{
+            p{
+                color: white;
+                font-size: 30px;
+                font-family: 'Shadows Into Light', cursive;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+            li{
+                list-style: none;
+                a{
+                margin-bottom: 10px;
+                text-decoration: none;
+                color: red;
+                font-size: 25px;
+                font-family: 'Shadows Into Light', cursive;
+                }
+            }   
+            }
+            .redes-sociales{
+                p{
+                    color: white;
+                    font-size: 30px;
+                    font-family: 'Shadows Into Light', cursive;
+                    text-align: center;
+                    margin-top: 40px;
+                }
+                .display-redes{
+                    display: flex;
+                    img{
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+            }
+    }
+
+//SECCION FOOTER TABLET
+    @media (max-width:1020px){      
+                .tamanio-footer{
+                    height: 100%;
+                    width: 100%;
+                    }
+                    .lista-redes{
+                        display: flex;
+                        justify-content: space-between;
+                        .lista-web{
+                            p{
+                                color: white;
+                                font-size: 20px;
+                                font-family: 'Shadows Into Light', cursive;
+                                text-align: center;
+                                margin-top: 10px;
+                                margin-bottom: 0;
+                            }
+                            li{
+                                list-style: none;
+                                a{
+                                margin-bottom: 10px;
+                                text-decoration: none;
+                                color: red;
+                                font-size: 20px;
+                                font-family: 'Shadows Into Light', cursive;
+                                }
+                            }   
+                            }
+                            .redes-sociales{
+                                p{
+                                    color: white;
+                                    font-size: 20px;
+                                    font-family: 'Shadows Into Light', cursive;
+                                    text-align: center;
+                                    margin-top: 35px;
+                                }
+                                .display-redes{
+                                    display: flex;
+                                    img{
+                                        margin-top: -10px;
+                                        height: 80px;
+                                        width: 80px;
+                                    }
+                                }
+                            }
+                    }
+        }
+
+//SECCION FOOTER CELULAR
+@media (max-width:576px){
+            #footer{
+                grid-area: footer;
+            }
+            .tamanio-footer{
+                height: 100%;
+                width: 100%;
+                }
+                .lista-redes{
+                    display: flex;
+                    justify-content: end;
+                    .lista-web{
+                        display: none;
+                        p{
+                            color: white;
+                            font-size: 15px;
+                            font-family: 'Shadows Into Light', cursive;
+                            text-align: center;
+                            margin-top: 10px;
+                            margin-bottom: 0;
+                        }
+                        li{
+                            list-style: none;
+                            a{
+                            margin-bottom: 10px;
+                            text-decoration: none;
+                            color: red;
+                            font-size: 10px;
+                            font-family: 'Shadows Into Light', cursive;
+                            }
+                        }   
+                        }
+                        .redes-sociales{
+                            display: flex;
+                            flex-direction: column;
+                            p{
+                                color: white;
+                                font-size: 15px;
+                                font-family: 'Shadows Into Light', cursive;
+                                text-align: center;
+                                margin-top: 40px;
+                            }
+                            .display-redes{
+                                display: flex;
+                                img{
+                                    margin-top: -10px;
+                                    height: 50px;
+                                    width: 50px;
+                                }
+                            }
+                        }
+                }
+        }

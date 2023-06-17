@@ -1,7 +1,4 @@
 #main{
-    .fondo-main{
-
-    }
     .flex-pc-contactanos{
         width: 100%;
         display: flex;
@@ -74,9 +71,6 @@
 
 @media (max-width:1020px){ 
 #main{
-    .fondo-main{
-
-    }
     .flex-pc-contactanos{
         width: 100%;
         display: flex;
@@ -89,13 +83,12 @@
                 color: white;
                 font-family: 'Shadows Into Light', cursive;
                 margin-top: 15px;
-                // margin-left: 2%; 
+                text-align: center;
             }
             h3{
                 font-size: 25px;
                 color: red;
-                font-family: 'Shadows Into Light', cursive;
-            //     margin-left: 2%; 
+                font-family: 'Shadows Into Light', cursive; 
             }
             .titulo-art{
                 color: white;
@@ -157,9 +150,6 @@
 
 @media (max-width:576px){
     #main{
-        .fondo-main{
-    
-        }
         .flex-pc-contactanos{
             width: 100%;
             display: flex;
@@ -168,13 +158,13 @@
                 height: 100%;
                 width: 100%;
                 margin-left: 2%;
+                
                 h2{
                     // position: relative;
                     font-size: 20px;
                     color: white;
                     font-family: 'Shadows Into Light', cursive;
-                    // bottom: 80%;    
-                    // margin-left: 2%;
+                    text-align: left;
                 }
                 h3{
                     font-size: 20px;

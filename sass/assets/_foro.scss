@@ -1,7 +1,5 @@
 #main{
     grid-area: main;
-    .fondo-main{
-    }
     .flex-pc-foro{
         height: 100%;
         width: 100%;
@@ -75,8 +73,6 @@
 @media (max-width:1020px){
     #main{
         grid-area: main;
-        .fondo-main{
-        }
         .flex-pc-foro{
             height: 100%;
             width: 100%;
@@ -87,6 +83,7 @@
                 font-family: 'Shadows Into Light', cursive; 
                 padding-top: 15px;
                 margin-left: 2%;
+                text-align: center;
             }
             h3{
                 font-size: 20px;
@@ -152,8 +149,6 @@
 @media (max-width:576px){
     #main{
         grid-area: main;
-        .fondo-main{
-        }
         .flex-pc-foro{
             height: 100%;
             width: 100%;

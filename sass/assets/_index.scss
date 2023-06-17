@@ -14,71 +14,6 @@ $negro:rgb(0, 0, 0);
                         grid-template-columns: 1fr 1fr 1fr;
                         grid-template-rows: 300px auto 270px;
                 }
-// SECCION HEADER PC
-#header{
-    grid-area: header;
-    .logo-barra{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        h1{
-            position: relative;
-            color: red;
-            font-family: "Rubik Wet Paint", cursive;
-            top: 81%;
-            left: 2%;
-            width: 0;
-            height: 0;
-        }
-    .logo{
-        height: 100%;
-        width: 480px;
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-    .barra{
-        height: 100%;
-        width: 100%;
-        .ubicar-nav{
-            position: relative;
-            bottom: 30px;
-            .nav-flex{
-                display: flex;
-                justify-content: space-around;
-                list-style: none;
-                li{
-                    &:hover{       
-                        transition: transform 1s;
-                        transform: scale(1.2);    
-                    }   
-                    a{
-                        font-size: 30px;
-                        font-family: 'Shadows Into Light', cursive;
-                        text-decoration: none; 
-                        color: $blanco;
-                        background-color: $negro;
-                        padding: 15px 20px;
-                        &:hover{
-                            background-color: white;
-                            color: black;    
-                        }
-                    }
-                }
-            }
-        }
-        img{
-            height: 100%;
-            width: 100%;
-        }
-        .display-escritorio{
-            display: block;
-        }
-    }
-    }
-}
-
 #nav{
     grid-area: nav;
 }
@@ -106,14 +41,14 @@ display: none;
             flex-direction: column;
             align-items: center;
             h2{
-                width: 100%;
                 font-size: 35px;
                 color: #f7f7f7;
                 font-family: "Shadows Into Light", cursive;
-                text-align: left;
                 margin-top: 15px;
-                margin-right: -40px;
-                }
+                width: 100%;
+                text-align: left;
+                margin-left: 6%;
+            }
                 h3{
                 font-size: 30px;
                 color: #f7f7f7;
@@ -197,56 +132,6 @@ display: none;
         }
     }
 
-// SECCION FOOTER PC
-#footer{
-    grid-area: footer;
-    background-color:$negro;
-}
-.tamanio-footer{
-    height: 100%;
-    width: 100%;
-    }
-    .lista-redes{
-        display: flex;
-        justify-content: space-between;
-        .lista-web{
-            p{
-                color: $blanco;
-                font-size: 30px;
-                font-family: 'Shadows Into Light', cursive;
-                text-align: center;
-                margin-top: 10px;
-                margin-bottom: 0;
-            }
-            li{
-                list-style: none;
-                a{
-                margin-bottom: 10px;
-                text-decoration: none;
-                color: red;
-                font-size: 25px;
-                font-family: 'Shadows Into Light', cursive;
-                }
-            }   
-            }
-            .redes-sociales{
-                p{
-                    color: $blanco;
-                    font-size: 30px;
-                    font-family: 'Shadows Into Light', cursive;
-                    text-align: center;
-                    margin-top: 40px;
-                }
-                .display-redes{
-                    display: flex;
-                    img{
-                        height: 100px;
-                        width: 100px;
-                    }
-                }
-            }
-    }
-
 
 // -----------------------------------------------SECCION TABLET--------------------------------------------------------
 @media (max-width:1020px){      
@@ -260,30 +145,6 @@ display: none;
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: 260px 60px auto 200px;
         }
-// SECCION HEADER TABLET
-    #header{
-        grid-area: header;
-        .logo-barra{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        background-image: url(../img/metal-slipknot-nu-metal-wallpaper-preview.jpg);
-        background-size: cover;
-        h1{
-            font-family: 'Shadows Into Light', cursive; 
-            position: relative;
-            color: rgba(253, 7, 7, 0.9254901961);
-            top: 0;
-        }
-        .logo{
-        display: none;
-        }
-        .barra{
-            display: none;
-        }
-        }
-        }
-
 
 // SECCION NAV TABLET
     #nav{
@@ -322,8 +183,6 @@ display: none;
 
 // SECCION MAIN TABLET
     #main{
-        .fondo-main{
-        }
         .flex-pc{
             .izquierda{
                 height: 100%;
@@ -333,6 +192,9 @@ display: none;
                 align-items: center;
                 h2{
                     font-size: 25px;
+                    width: 30%;
+                    text-align: center;
+                    margin-left: 0%;
                 }
             }
             .derecha{
@@ -340,57 +202,6 @@ display: none;
             }
         }
     }
-
-
-// SECCION FOOTER TABLET
-    #footer{
-    }
-        .tamanio-footer{
-            height: 100%;
-            width: 100%;
-            }
-            .lista-redes{
-                display: flex;
-                justify-content: space-between;
-                .lista-web{
-                    p{
-                        color: $blanco;
-                        font-size: 20px;
-                        font-family: 'Shadows Into Light', cursive;
-                        text-align: center;
-                        margin-top: 10px;
-                        margin-bottom: 0;
-                    }
-                    li{
-                        list-style: none;
-                        a{
-                        margin-bottom: 10px;
-                        text-decoration: none;
-                        color: red;
-                        font-size: 20px;
-                        font-family: 'Shadows Into Light', cursive;
-                        }
-                    }   
-                    }
-                    .redes-sociales{
-                        p{
-                            color: $blanco;
-                            font-size: 20px;
-                            font-family: 'Shadows Into Light', cursive;
-                            text-align: center;
-                            margin-top: 35px;
-                        }
-                        .display-redes{
-                            display: flex;
-                            img{
-                                margin-top: -10px;
-                                height: 80px;
-                                width: 80px;
-                            }
-                        }
-                    }
-            }
-    
 }
 //--------------------------------------- SECCION CELULAR -----------------------------------------------------------------
 @media (max-width:576px){
@@ -405,8 +216,6 @@ display: none;
 }
 
 // SECCION HEADER CELULAR
-#header{
-}
 
 // SECCION NAV CELULAR
 #nav{
@@ -432,10 +241,10 @@ display: none;
             margin: 20px 0px 24px 2px;
         }
         #colorli{
-            color: $blanco;
-            font-family: 'Shadows Into Light', cursive;
-            font-size: 12px;
-            margin-top: 80%;
+            color: #f7f7f7;
+            font-family: "Shadows Into Light", cursive;
+            font-size: 13px;
+            margin-top: 51%;
         }
         #boton-nav-bar{
             background-color: $blanco;
@@ -453,13 +262,13 @@ display: none;
 // SECCION MAIN CELULAR
 #main{
     grid-area: main;
-    .fondo-main{
-    }
     .flex-pc{
         display: flex;
         .izquierda{
             h2{
                 font-size: 22px;
+                width: 93%;
+                text-align: left;
                 }
                 h3{
                 font-size: 20px;
@@ -495,57 +304,4 @@ display: none;
             } 
         }
 }
-
-// SECCION FOOTER CELULAR
-#footer{
-    grid-area: footer;
-}
-.tamanio-footer{
-    height: 100%;
-    width: 100%;
-    }
-    .lista-redes{
-        display: flex;
-        justify-content: end;
-        .lista-web{
-            display: none;
-            p{
-                color: $blanco;
-                font-size: 15px;
-                font-family: 'Shadows Into Light', cursive;
-                text-align: center;
-                margin-top: 10px;
-                margin-bottom: 0;
-            }
-            li{
-                list-style: none;
-                a{
-                margin-bottom: 10px;
-                text-decoration: none;
-                color: red;
-                font-size: 10px;
-                font-family: 'Shadows Into Light', cursive;
-                }
-            }   
-            }
-            .redes-sociales{
-                display: flex;
-                flex-direction: column;
-                p{
-                    color: $blanco;
-                    font-size: 15px;
-                    font-family: 'Shadows Into Light', cursive;
-                    text-align: center;
-                    margin-top: 40px;
-                }
-                .display-redes{
-                    display: flex;
-                    img{
-                        margin-top: -10px;
-                        height: 50px;
-                        width: 50px;
-                    }
-                }
-            }
-    }
 }

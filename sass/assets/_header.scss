@@ -1,0 +1,106 @@
+//SECCION HEADER PC
+#header{
+    grid-area: header;
+    .logo-barra{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        h1{
+            position: relative;
+            color: red;
+            font-family: "Rubik Wet Paint", cursive;
+            top: 81%;
+            left: 2%;
+            width: 0;
+            height: 0;
+        }
+    .logo{
+        height: 100%;
+        width: 480px;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .barra{
+        height: 100%;
+        width: 100%;
+        .ubicar-nav{
+            position: relative;
+            bottom: 30px;
+            .nav-flex{
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                // .animacion{
+                //     animation-name: expasion;
+                //     animation-duration: 2s;
+                //     animation-delay: 1s;
+                li{
+                    &:hover{       
+                    transition: transform 1s;
+                    transform: scale(1.2);    
+                    }   
+                    a{
+                        font-size: 30px;
+                        font-family: 'Shadows Into Light', cursive;
+                        text-decoration: none; 
+                        color: white;
+                        background-color: black;
+                        padding: 15px 20px;
+                        &:hover{
+                            background-color: white;
+                            color: black;    
+                        }
+                    }
+                }
+                //} Donde cierra la animacion
+            }
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .display-escritorio{
+            display: block;
+        }
+    }
+    }
+}
+
+//SECCION HEADER TABLET
+@media (max-width:1020px){      
+    .grilla{
+            display: grid;
+            grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "main main main"
+            "footer footer footer";
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 260px 60px auto 200px;
+        }
+// SECCION HEADER TABLET
+    #header{
+        grid-area: header;
+        .logo-barra{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        background-image: url(../img/metal-slipknot-nu-metal-wallpaper-preview.jpg);
+        background-size: cover;
+        h1{
+            font-family: 'Shadows Into Light', cursive; 
+            position: relative;
+            color: rgba(253, 7, 7, 0.9254901961);
+            top: 0;
+        }
+        .logo{
+        display: none;
+        }
+        .barra{
+            display: none;
+        }
+        }
+}
+}
