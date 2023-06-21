@@ -21,12 +21,19 @@
             }
             li{
                 list-style: none;
+                &:hover{
+                    transition: transform 1s;
+                    transform: scale(1.2);
+                }
                 a{
                 margin-bottom: 10px;
                 text-decoration: none;
                 color: red;
                 font-size: 25px;
                 font-family: 'Shadows Into Light', cursive;
+                &:hover{
+                    color: blue;
+                }
                 }
             }   
             }
@@ -37,6 +44,19 @@
                     font-family: 'Shadows Into Light', cursive;
                     text-align: center;
                     margin-top: 40px;
+                    animation-name: futer; 
+                    animation-iteration-count: infinite;
+                    animation-timing-function: cubic-bezier(0,-0.01, 1, 1);
+                    animation-duration: 700ms;
+                    animation-delay: 1s;
+                }
+                @keyframes futer{
+                    0%{font-family: 'Shadows Into Light', cursive;}
+                    20%{font-family: 'Courier New', Courier, monospace;}
+                    40%{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+                    60%{font-family: 'Times New Roman', Times, serif;}
+                    80%{font-family: Arial, Helvetica, sans-serif;}
+                    100%{font-family: cursive;}
                 }
                 .display-redes{
                     display: flex;

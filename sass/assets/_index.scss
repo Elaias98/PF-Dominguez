@@ -40,19 +40,17 @@ display: none;
             display: flex;
             flex-direction: column;
             align-items: center;
-            h2{
+            .titulo{
                 font-size: 35px;
                 color: #f7f7f7;
                 font-family: "Shadows Into Light", cursive;
                 margin-top: 15px;
                 width: 100%;
-                text-align: left;
                 margin-left: 6%;
             }
-                h3{
+                .titulo--h3{
+                @extend .titulo;
                 font-size: 30px;
-                color: #f7f7f7;
-                font-family: "Shadows Into Light", cursive;
                 text-align: center;
                 margin: 20px;
                 }
@@ -79,11 +77,14 @@ display: none;
                         margin: 40px 0px;
                     }
                 }
-                .caja-destacado{ 
+                @mixin estilo-caja{
                     background-color: bisque;
                     border-radius:5px;
                     padding: 10px; 
                     width: 85%;
+                }
+                .caja-destacado{ 
+                    @include estilo-caja;
                 }
             } 
         }
@@ -190,11 +191,19 @@ display: none;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                h2{
+                .titulo{
+                    // font-size: 25px;
+                    // width: 30%;
+                    // text-align: center;
+                    // margin-left: 0%;
                     font-size: 25px;
                     width: 30%;
                     text-align: center;
                     margin-left: 0%;
+                }
+                .titulo--h3{
+                    font-size: 25px;
+                    width: 100%;
                 }
             }
             .derecha{
@@ -265,13 +274,14 @@ display: none;
     .flex-pc{
         display: flex;
         .izquierda{
-            h2{
+            .titulo{
                 font-size: 22px;
                 width: 93%;
                 text-align: left;
                 }
-                h3{
+                .titulo--h3{
                 font-size: 20px;
+                text-align: center;
                 }
                 iframe{
                 height: 200px;
