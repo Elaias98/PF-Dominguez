@@ -2,40 +2,64 @@
     .flex-pc-contactanos{
         width: 100%;
         display: flex;
-        .izquierda-contactanos{
-            height: 100%;
-            width: 50%;
-            margin-left: 2%;
-            h2{
+        flex-direction: column;
+        align-items: center;
+        h2{
             font-size: 35px;
             color: white;
             font-family: 'Shadows Into Light', cursive;
             margin-top: 15px;
+            width: 97%;
             }
             h3{
             font-size: 35px;
             color: red;
             font-family: 'Shadows Into Light', cursive;
-            
+            width: 97%;
             }
+        .izquierda-contactanos{
+            align-items: center;
+            .tamanio{
+                margin: 10px 0px;
             .titulo-art{
                 color: white;
                 font-family: 'Shadows Into Light', cursive;
                 font-size: 20px;
-                .tamanio{
-                    margin-bottom: 10px;
+                border: 3px solid white;
+                padding: 43px;
+                animation-name: bordes;
+                animation-iteration-count:infinite;
+                animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+                animation-duration: 2s;
+                animation-delay: 0s;
+                legend{
+                    text-align: center;
+                }
+                
                     .estilo-input{
-                        width: 200px;
+                        width: 92%;
                         margin: 10px;
                     }
                     .texto-tarea{
-                        width: 315px;
+                        width: 98%;
                     }
                     .botones{
                         display: flex;
                         justify-content: space-around;
-                        width: 307px;
+                        width: 99%;
                     }
+                }
+                @keyframes bordes{
+                    10%{border: 3px solid red;}
+                    20%{border: 3px solid green;}
+                    30%{border: 3px solid yellow;}
+                    40%{border: 3px solid purple;}
+                    50%{border: 3px solid orange;}
+                    60%{border: 3px solid aqua;}
+                    70%{border: 3px solid gold;}
+                    80%{border: 3px solid saddlebrown;}
+                    90%{border: 3px solid slateblue;}
+                    100%{border: 3px solid white;}
                 }
             }
             .separacion{
@@ -48,8 +72,8 @@
             }
         }
         .derecha-contactanos{
-            height: 100%;
-            width: 50%;
+            width: 100%;
+            padding: 1% 5%;
             h2{
                 margin-top: 35px;
                 font-size: 35px;
@@ -72,56 +96,52 @@
 @media (max-width:1020px){ 
 #main{
     .flex-pc-contactanos{
-        width: 100%;
-        display: flex;
+        h2{
+            font-size: 25px;
+            color: white;
+            font-family: 'Shadows Into Light', cursive;
+            margin-top: 15px;
+            text-align: center;
+        }
+        h3{
+            font-size: 25px;
+            color: red;
+            font-family: 'Shadows Into Light', cursive; 
+        }
         .izquierda-contactanos{
-            height: 100%;
-            width: 50%;
-            margin-left: 2%;
-            h2{
-                font-size: 25px;
-                color: white;
-                font-family: 'Shadows Into Light', cursive;
-                margin-top: 15px;
-                text-align: center;
-            }
-            h3{
-                font-size: 25px;
-                color: red;
-                font-family: 'Shadows Into Light', cursive; 
-            }
+            .tamanio{
+                margin-bottom: 10px;
             .titulo-art{
                 color: white;
                 font-family: 'Shadows Into Light', cursive;
                 font-size: 15px;
-                .tamanio{
-                    margin-bottom: 10px;
                     .estilo-input{
-                        width: 150px;
+                        width: 92%;
                         margin: 10px;
                     }
                     .texto-tarea{
-                        width: 270px;
+                        width: 98%;
                     }
                     .botones{
                         display: flex;
                         justify-content: space-around;
-                        width: 280px;
+                        width: 100%;
                     }
                 }
             }
             .separacion{
                 margin: 10px 0px;
+                font-size: 15px;
                 h4{
                     color: white;
                     font-family: 'Shadows Into Light', cursive;
                     margin-top: 20px;
+                    font-size: 20px;
                 }
             }
         }
         .derecha-contactanos{
-            height: 100%;
-            width: 50%;
+            width: 100%;
             h2{
                 margin-top: 35px;
                 font-size: 25px;
@@ -148,47 +168,45 @@
 }
 }
 
+
 @media (max-width:576px){
     #main{
         .flex-pc-contactanos{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
+            h2{
+                font-size: 20px;
+                color: white;
+                font-family: 'Shadows Into Light', cursive;
+                text-align: left;
+            }
+            h3{
+                font-size: 20px;
+                color: red;
+                font-family: 'Shadows Into Light', cursive;
+            }
             .izquierda-contactanos{
                 height: 100%;
                 width: 100%;
                 margin-left: 2%;
-                
-                h2{
-                    // position: relative;
-                    font-size: 20px;
-                    color: white;
-                    font-family: 'Shadows Into Light', cursive;
-                    text-align: left;
-                }
-                h3{
-                    font-size: 20px;
-                    color: red;
-                    font-family: 'Shadows Into Light', cursive;
-                //     margin-left: 2%; 
-                }
+                .tamanio{
+                    margin-bottom: 10px;
                 .titulo-art{
                     color: white;
-                    font-family: 'Shadows Into Light', cursive;
+                    font-family: "Shadows Into Light", cursive;
                     font-size: 15px;
-                    .tamanio{
-                        margin-bottom: 10px;
+                    width: 80%;
+                    margin-left: 7%;
+                    padding: 10px;
                         .estilo-input{
-                            width: 120px;
+                            width: 92%;
                             margin: 10px;
                         }
                         .texto-tarea{
-                            width: 220px;
+                            width: 98%;
                         }
                         .botones{
                             display: flex;
                             justify-content: space-around;
-                            width: 230px;
+                            width: 100%;
                         }
                     }
                 }
